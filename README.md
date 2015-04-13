@@ -82,3 +82,11 @@ Khởi tạo một host mới với IP là IP của máy agent
 Khởi tạo các item với các key zapache[TotalAccesses], zapache[TotalKBytes],zapache[CPULoad],zapache[Uptime],zapache[ReqPerSec],zapache[BytesPerSec],zapache[BytesPerReq],zapache[BusyWorkers],zapache[IdleWorkers]
 
 <img src=http://i.imgur.com/Omc1ViE.png width="80%" height="80%" border="1">
+
+Kết quả:
+
+<img src=http://i.imgur.com/X5GpBdS.png width="80%" height="80%" border="1">
+
+##Phương pháp21:
+
+### Trên máy Zabbix Agent
