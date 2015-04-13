@@ -30,7 +30,7 @@ Zabbix Agent sẽ thu thập các thông số này rồi trả về cho Za
 
 Đánh giá: Được apache hỗ trợ nên các số liệu trả về chính xác. Tuy nhiên Zabbix gent để lấy được các số liệu này cần truy cập vào web service vô tình tăng tổng số truy cập nên số liệu monitor trên zabbix server đã bao gồm sự truy cập của Zabbix Agent
 
-Phương pháp 2: Lọc ra trong file log của apac
+Phương pháp 2: Lọc ra trong file log của apache
 
 - Tổng số truy cập
 
@@ -87,6 +87,6 @@ Kết quả:
 
 <img src=http://i.imgur.com/X5GpBdS.png width="80%" height="80%" border="1">
 
-##Phương pháp21:
+##Phương pháp 2:
 
 ### Trên máy Zabbix Agent
