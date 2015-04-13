@@ -1,4 +1,4 @@
-# Đặt vấn đề
+# I. Đặt vấn đề
 Trong bài viết này mình sẽ trình bày 2 phương pháp để monitor apache
 
 Phương pháp 1: Sử dụng các thông số trả về từ
@@ -41,3 +41,33 @@ Phương pháp 2: Lọc ra trong file log của apac
 - Tính tổng dung lượng (theo Bye)truy cập 
 
 Đánh giá: phương pháp này thống kê theo file log của apache nên số liệu chính xác tuy nhiên có hạn chế do file log không hỗ trợ nhiều và file log bị hệ thống xóa định kỳ
+
+#II. Triển khai
+
+##Phương pháp 1:
+
+Tải file script:
+
+```sh
+wget 
+```
+
+Tạo thư mục chứa script và thêm quyền file thực thi:
+
+```sh
+mkdir -p /var/lib/zabbixsrv/externalscripts/
+cp zapache /var/lib/zabbixsrv/externalscripts/
+chmod +x /var/lib/zabbixsrv/externalscripts/zapache
+```
+Test file script:
+
+<img src=http://i.imgur.com/cBsrPAK.png width="80%" height="80%" border="1">
+
+Chỉnh sửa file cấu hình zabbix agent, thêm UserParameter:
+
+<img src=http://i.imgur.com/ZMvFIln.png width="80%" height="80%" border="1">
+
+Khởi động lại zabbix Agent:
+
+```sh
+#service zabbix-agent restart
