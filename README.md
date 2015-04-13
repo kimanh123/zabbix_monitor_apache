@@ -6,4 +6,4 @@ Chương trình 1: Sử dụng các thông số trả về từ
 http://localhost/server-status?auto
 ``` 
 
-<img src=http://prntscr.com/6t52k5 width="80%" height="80%" border="1">
+<img src=http://i.imgur.com/78VAxvj.png width="80%" height="80%" border="1">
