@@ -46,6 +46,7 @@ Phương pháp 2: Lọc ra trong file log của apac
 
 ##Phương pháp 1:
 
+### Trên máy Zabbix Agent
 Tải file script:
 
 ```sh
@@ -71,3 +72,13 @@ Khởi động lại zabbix Agent:
 
 ```sh
 #service zabbix-agent restart
+```
+### Dashboard Zabbix
+
+Khởi tạo một host mới với IP là IP của máy agent
+
+<img src=http://i.imgur.com/17NqZk0.png width="80%" height="80%" border="1">
+
+Khởi tạo các item với các key zapache[TotalAccesses], zapache[TotalKBytes],zapache[CPULoad],zapache[Uptime],zapache[ReqPerSec],zapache[BytesPerSec],zapache[BytesPerReq],zapache[BusyWorkers],zapache[IdleWorkers]
+
+<img src=http://i.imgur.com/Omc1ViE.png width="80%" height="80%" border="1">
