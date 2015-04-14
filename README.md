@@ -60,9 +60,18 @@ mkdir -p /var/lib/zabbixsrv/externalscripts/
 cp zapache /var/lib/zabbixsrv/externalscripts/
 chmod +x /var/lib/zabbixsrv/externalscripts/zapache
 ```
+Chỉnh sửa file cấu hình apache:
+
+```sh
+vi /etc/apache2/mods-enables/status.conf
+```
+
+<img src=http://i.imgur.com/F7nH9jG.png width="80%" height="80%" border="1">
+
 Test file script:
 
 <img src=http://i.imgur.com/cBsrPAK.png width="80%" height="80%" border="1">
+
 
 Chỉnh sửa file cấu hình zabbix agent, thêm UserParameter:
 
