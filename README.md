@@ -99,3 +99,42 @@ Kết quả:
 ##Phương pháp 2:
 
 ### Trên máy Zabbix Agent
+
+
+Sửa trong file cấu hình zabbix agent, thêm vào các UserParameter
+
+```sh
+vi /etc/zabbix/zabbix_agentd.conf
+```
+
+<img src=http://i.imgur.com/fwIlNri.png width="80%" height="80%" border="1">
+
+Trong đó:
+
+- apache.totalaccess: Tổng số truy cập
+
+- apache.totalaccess.get: Tổng số truy cập sử dụng giao thức get
+
+- apache.totalaccess.post: Tổng số truy cập sử dụng giao thức post
+
+- apache.totalaccess.ok: Tổng số truy cập thành công
+
+- apache.totalaccess.fail: Tổng số truy cập thất bại
+
+- apache.access.per.minuse: Số truy cập trong một phút
+
+- apache.totalbyte: Tổng số truy cập
+
+Trên Dashbroad Zabbix khởi tạo host cùng với các key trên để monitor
+
+Kết quả
+
+- Danh sách các item:
+
+<img src=http://i.imgur.com/x9LIr6C.png width="80%" height="80%" border="1">
+
+- Tổng số truy cập:
+
+
+<img src=http://i.imgur.com/vfMqFym.png width="80%" height="80%" border="1">
+
