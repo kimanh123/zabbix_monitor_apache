@@ -46,11 +46,12 @@ Phương pháp 2: Lọc ra trong file log của apache
 
 ##Phương pháp 1:
 
+
 ### Trên máy Zabbix Agent
 Tải file script:
 
 ```sh
-wget 
+wget https://raw.githubusercontent.com/thanhha123/zabbix_monitor_apache/master/zapache
 ```
 
 Tạo thư mục chứa script và thêm quyền file thực thi:
@@ -138,3 +139,6 @@ Kết quả
 
 <img src=http://i.imgur.com/vfMqFym.png width="80%" height="80%" border="1">
 
+## Những chia sẻ trên có sự tham khảo từ bài viết:
+
+[Lorf Apache](https://github.com/lorf/zapache)
